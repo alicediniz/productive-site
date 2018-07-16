@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Be Productive</title>
+
+	<link rel="shortcut icon" href="https://cdn.pixabay.com/photo/2016/03/31/22/42/harvest-1297173_960_720.png" type="image/vnd.microsoft.icon" />
+
+	<link rel="stylesheet" type="text/css" href="generalSite.css">
+	<link rel="stylesheet" type="text/css" href="timer.css">
+	<link rel="stylesheet" type="text/css" href="todo.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+<body>
+	<nav class="navbar fixed-top navbar-dark bg-dark">
+	  <div class="container">
+		  <li class="nav navbar-nav">
+	        <a class="nav-link" href="./home.html">Home</a>
+	      </li>
+	      <li class="nav navbar-nav">
+		  	<a class="navbar-brand mx-auto" href="./todo.html">
+		  		<img src="https://cdn.pixabay.com/photo/2016/03/31/22/42/harvest-1297173_960_720.png" width="30" height="30" alt="brand">
+		  	</a>
+		  </li>
+		  <li class="nav navbar-nav">
+	        <a class="nav-link" href="./about.html">Contato</a>
+	      </li>
+  		</div>
+	</nav>
+
+	<div class="timerPomo">
+		<div class="circle"> 
+		      <!-- WORK -->
+		    <svg width="300" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+		      <g transform="translate(110,110)">
+		        <circle r="100" class="e-c-base"/>
+		        <g transform="rotate(-90)">
+		          <circle r="100" class="e-c-progress work"/>
+		          <g id="e-pointer">
+		            <circle cx="100" cy="0" r="8" class="e-c-pointer work"/>
+		          </g>
+		        </g>
+		      </g>
+		    </svg> 
+		</div>
+		<div class="controlls">
+			<div class="display-remain-time work">25:00</div>
+			<button class="play" id="pause"></button>
+		</div>
+		<div class="buttons">
+  			<button type="button" class="btn btn-dark" id="newCicle">Novo Ciclo</button>
+  			<button type="button" class="btn btn-dark" id="longBreak">Pausa Longa</button>
+		</div>
+	</div>
+
+	<audio id="audio" src="http://www.soundjay.com/button/beep-07.wav" autostart="false" ></audio>
+
+
+	<table>
+	  <thead>
+	    <tr>
+	      <td>TO-DO LIST <i class="fas fa-plus"></i></td>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <tr id="inputNewToDo">
+	      <td><input type="text" name="newTodo" placeholder="Add New Todo"></td>
+	    </tr>
+	    <tr class="toDoItem">
+	      <td class="task"><span><i class="far fa-trash-alt"></i></span>Ser produtivo</td>
+	    </tr>
+	  </tbody>
+	</table>
+
+	<div id="footer" align="center">
+		<p> Copyright &copy; 2018 Alice Diniz Ferreira<p>
+	</div>
+
+	<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="todo.js"></script>
+	<script type="text/javascript" src="timer.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+#exampleImg {
+	width: 70px ;
+	height: 90px;
+	padding-top: 5px;
+	padding-bottom: 0;
+}
+
+p {
+	padding-top:  20px;
+}
+
+span {
+	color: #CC0000 ;
+}
+
+#begin {
+	color: #CC0000 !important;
+}
+
+#inst {
+	padding-top: 50px;
+}

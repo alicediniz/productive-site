@@ -1,0 +1,14 @@
+form {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.form-group {
+  width: 30%;
+  text-align: center;
+}
+
+.form-control:focus{
+  border-color: #D73444 !important;
+  box-shadow:0 0 0 .2rem rgba(220,53,69,.25) !important;
+}

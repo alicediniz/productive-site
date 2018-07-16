@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300');
+
+.buttons {
+  margin-left: 50px;
+}
+
+.btn {
+  margin: 8px; 
+}
+
+.timerPomo {
+  position: relative;
+  top: 80px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.fa-redo {
+  margin: 10px 10px 30px 20px ;
+  font-size: 31px;
+  border: none;
+  width: 50px;
+  height: 50px;
+}
+.fa-redo:hover { opacity: 0.8; }
+
+.controlls {
+  position: absolute;
+  left: 75px;
+  top: 105px;
+  text-align: center;
+}
+
+#pause {
+  outline: none;
+  background: transparent;
+  border: none;
+  margin-top: 10px;
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+
+.play::before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 22px solid #343A40;
+}
+
+.pause::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  width: 15px;
+  height: 30px;
+  background-color: transparent;
+  border-radius: 1px;
+  border: 5px solid #343A40;
+  border-top: none;
+  border-bottom: none;
+}
+
+#pause:hover { opacity: 0.8; }
+
+/*Cor por baixo*/
+.e-c-base {
+  fill: none;
+  stroke: #B6B6B6;
+  stroke-width: 4px
+}
+
+                                        /* Cor do relogio working time*/
+.e-c-progress.work {
+  fill: none;
+  stroke: #F7958E;
+  stroke-width: 4px;
+  transition: stroke-dashoffset 0.7s;
+}
+
+.e-c-pointer.work {
+  fill: #FFF;
+  /*stroke: #666600;*/
+  stroke: #F7958E;
+  stroke-width: 2px;
+}
+
+.display-remain-time.work {
+  font-family: 'Roboto';
+  font-weight: 100;
+  font-size: 65px;
+  color: #F7958E;
+}
+
+
+                                      /* Cor do relogio shortBreak time*/
+.e-c-progress.shortBreak {
+  fill: none;
+  stroke: #66CC00;
+  stroke-width: 4px;
+  transition: stroke-dashoffset 0.7s;
+}
+
+.e-c-pointer.shortBreak {
+  fill: #FFF;
+  /*stroke: #666600;*/
+  stroke: #66CC00;
+  stroke-width: 2px;
+}
+.display-remain-time.shortBreak {
+  font-family: 'Roboto';
+  font-weight: 100;
+  font-size: 65px;
+  color: #66CC00;
+}
+
+
+                                      /* Cor do relogio longBreak time*/
+.e-c-progress.longBreak {
+  fill: none;
+  stroke: #3399FF;
+  stroke-width: 4px;
+  transition: stroke-dashoffset 0.7s;
+}
+
+.e-c-pointer.longBreak {
+  fill: #FFF;
+  /*stroke: #666600;*/
+  stroke: #3399FF;
+  stroke-width: 2px;
+}
+.display-remain-time.longBreak {
+  font-family: 'Roboto';
+  font-weight: 100;
+  font-size: 65px;
+  color: #3399FF;
+}
+
+#e-pointer { transition: transform 0.7s; }
+
+body { 
+  background-color:#f7f7f7;
+}

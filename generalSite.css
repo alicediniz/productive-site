@@ -1,0 +1,18 @@
+.navbar {
+  height: 40px;
+  bottom: 50px !important;
+}
+body {
+	background-color: #F8F9FA !important;
+	color: #B2B2B2 !important;
+	font-family: 'Open Sans Condensed', 'sans-serif'  !important; 
+}
+.navbar-nav>li>a {
+  color: #B2B2B2 !important;
+  font-size: 20px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.container {
+	position: center;
+}
