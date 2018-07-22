@@ -4,11 +4,34 @@ form {
 }
 
 .form-group {
+  position: relative;
   width: 30%;
   text-align: center;
+}
+
+input {
+	height: 45px;
 }
 
 .form-control:focus{
   border-color: #D73444 !important;
   box-shadow:0 0 0 .2rem rgba(220,53,69,.25) !important;
+}
+
+.form-control:focus,
+.form-control:valid {
+	margin-top: 35px;
+}
+
+.form-control:focus ~ label,
+.form-control:valid ~ label {
+  top : -25px;
+  color: red;
+  font-size: 15px;
+}
+
+div form .form-group label {
+	position: absolute;
+	top: 10px;
+	left: 7px;
 }
